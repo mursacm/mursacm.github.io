@@ -52,6 +52,7 @@ ul {
 }
 
 .head {
+  position: relative;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
@@ -91,4 +92,15 @@ h4 {
 .flex-space-between {
   display: flex;
   justify-content: space-between;
+}
+
+.pdf-btn {
+  position: absolute;
+  top: -5px;
+  right: -70px;
+  cursor: pointer;
+}
+
+.pdf-btn img {
+  height: 40px;
 }
