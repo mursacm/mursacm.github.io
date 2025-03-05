@@ -1,92 +1,94 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
 }
 
 .main {
-    height: 100%;
-    max-width: 1024px;
-    margin: auto;
-    padding: 1rem;
+  max-width: 1024px;
+  padding: 10px 80px;
+  margin: 80px auto;
+  background: #f5f5f5;
+  border: solid #666;
+  border-width: 4px 0 2px 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.name {
-    font-size: 2.5rem;
-    font-weight: bold;
+.main > div {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
-.job {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #8B0000;
+.section-title {
+  flex-basis: 120px;
+  flex-shrink: 0;
 }
 
-.header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: .5rem;
-    padding: .5rem 0;
+.profile {
+  width: 100%;
+  font-size: 120%;
+  padding-right: 1rem;
+  line-height: 26px;
+  color: #444;
 }
 
-img {
-    height: 20px;
+.links {
+  display: flex;
+  gap: 1rem;
 }
 
-.flex-center {
-    display: flex;
-    align-items: center;
-    gap: .2rem;
-}
-
-.header a {
-    text-decoration: none;
-}
-
-.title {
-    font-size: 30px;
-    font-weight: bold;
-    width: 100%;
-    border-bottom: 3px solid black;
-    margin: 1rem 0;
-    text-transform: uppercase;
-}
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-    gap: .2rem;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: 1fr 17rem;
-    gap: 2rem;
-}
-
-.job-item {
-    display: flex;
-    flex-direction: column;
-    gap: .2rem;
-    padding: .5rem 0;
-}
-
-.job-desc {
-    font-size: 1.5rem;
-}
-
-.company {
-    font-size: 1.2rem;
-    color: #8B0000;
-}
-                                                            
-@media(max-width: 700px) {
-    .content {
-        grid-template-columns: 1fr;
-    }
+.links a {
+  text-decoration: none;
 }
 
 ul {
-    margin: 5px 0;
-    padding-left: 2rem;
+  margin: 0;
+  list-style-type: "- ";
+}
+
+.head {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-pic {
+  height: 140px;
+  border-radius: 50%;
+}
+
+.name h1 {
+  font-size: 34px;
+  letter-spacing: 3px;
+}
+h2 {
+  font-size: 152%;
+  letter-spacing: 2px;
+}
+h3,
+h4 {
+  font-size: 122%;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  color: #333;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
 }
